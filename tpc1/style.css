@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(231, 239, 241);
+  }
+
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    font-family: Arial, sans-serif, serif;
+    font-size: 18px;
+}
+
+#s1 {
+    margin-top: 110px;
+}
+
+#s4 {
+    margin-top: 180px;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+    border: 5px solid black;
+    border-style: outset;
+    padding: 20px;
+    font-family: Arial, sans-serif, serif;
+    font-size: 40px;
+}
+
+.intro {
+    float: left;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+.habitat {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+.eat {
+    float: left;
+    margin-top: 5px;
+    margin-right: 15px;
+    width: 17%;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li:hover {
+    margin-left: -20px;
+}
+
+h3 {
+    border-left: 5px solid black;
+    background-color: gainsboro;
+    padding: 10px;
+}
+
+figure {
+    display: table;
+} 
+
+figcaption {    
+    display: table-caption;
+    caption-side: bottom;
+    text-align: center;
+}
+
+.mundo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.table {
+    margin-left:auto; 
+    margin-right:auto;
+    font-family: arial, sans-serif, serif;
+    border-collapse: collapse;
+}
+
+.table td, .table th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #dddddd;
+}
