@@ -1,0 +1,14 @@
+a)Qual o "IDENTI" dos arqueossítios do concelho de Amares. 
+ //IDENTI[contains(../CONCEL,'Amares')]
+
+b)Quais os concelhos com arqueossítios registados. 
+ //CONCEL[not(normalize-space(.)=following::CONCEL/normalize-space(.))]
+
+c)Seleccione as descrições dos arqueossítios do concelho de Montalegre. 
+ //DESCRI[contains(../CONCEL,'Montalegre')]
+
+d)Quantos arqueossítios pertencem ao concelho de Amares:
+ count(//ARQELEM[contains(./CONCEL,'Amares')])
+
+e)Quais os arqueossítios referentes a Castro: 
+ //IDENTI[..//LIGA/@TERMO='castro']

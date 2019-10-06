@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT project-record (head,team,abstract,deliver) >
+
+<!-- HEAD -->
+<!ELEMENT head (key-name,title,subtitle?,begin-date,end-date,supervisor) >
+<!ELEMENT key-name (#PCDATA) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT subtitle (#PCDATA) >
+<!ELEMENT begin-date (#PCDATA) >
+<!ELEMENT end-date (#PCDATA) >
+<!ELEMENT supervisor (#PCDATA) >
+<!ATTLIST supervisor 
+            href CDATA #REQUIRED >
+
+<!-- TEAM -->
+<!ELEMENT team (member+) >
+<!ELEMENT member (#PCDATA) >
+<!ATTLIST member
+            id ID #REQUIRED
+            email CDATA #REQUIRED >
+         
+<!-- ABSTRACT -->
+<!ELEMENT abstract (paragraph+) >
+<!ELEMENT paragraph (#PCDATA | bold | italic)* >
+<!ELEMENT bold (#PCDATA) >
+<!ELEMENT italic (#PCDATA) >
+
+<!-- DELIVERABLES -->
+<!ELEMENT deliver (doc+) >
+<!ELEMENT doc (#PCDATA) >
+<!ATTLIST doc
+            href CDATA #REQUIRED>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project-record SYSTEM "pr.dtd">
+<project-record>
+    <head>
+        <key-name>PRI1920_TPC2</key-name>
+        <title>TPC 2</title>
+        <begin-date>Setembro 2019</begin-date>
+        <end-date>Outubro 2019</end-date>
+        <supervisor href="www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </head>
+    <team>
+        <member id="a76516" email="a76516@alunos.uminho.pt">João António Cidade Vieira</member>
+    </team>
+    <abstract>
+        <paragraph>
+            Este documento XML foi criado no âmbito da disciplina de <bold>PRI</bold>, com o intuito de dar resposta ao segundo TPC,
+            que tem como objetivo gerar um "Project-Record", para uso futuro. Também foi requerido que utilizássemos
+            a linguagem XPATH, para dar resposta às questões sobre a consulta de dois ficheiros XML independentes.
+        </paragraph>
+        <paragraph>
+            Antes de gerar o XML, foi definido um DTD (<italic>Document Type Definition</italic>) de modo a criar uma estrutura
+            para o XML, de acordo com os requisitos pretendidos. Um documento DTD permite definir uma estrutura uniforme,
+            válida e bem formada, com os respetivos elementos e atributos de um documento XML.
+        </paragraph>
+        <paragraph>
+            A parte final do TPC, consistia no uso da linguagem XPATH, que pode ser utilizada para navegar através dos elementos e
+            atributos de um documento XML. Posto isto, estão anexados dois ficheiros "arq.txt" e "agenda.txt" com as respostas 
+            relativas às questões de cada documento XML.            
+        </paragraph>
+    </abstract>
+    <deliver>
+        <doc href="pr.dtd">pr.dtd</doc>
+        <doc href="pr.xml">pr.xml</doc>
+        <doc href="arq.txt">arq.txt</doc>
+        <doc href="agenda.txt">agenda.txt</doc>
+    </deliver>
+</project-record>
