@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI1920_TPC3</keyname>
+        <title>Criação de Stylesheet's XSLT</title>
+        <subtitle>Relatório do TPC3</subtitle>
+        <bdate>7 de Outubro 2019</bdate>
+        <edate>21 de Outubro 2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>a76516</identifier>
+            <name>João António Cidade Vieira</name>
+            <email>a76516@alunos.uminho.pt</email>
+            <photo path="photo.jpg"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            Este TPC tinha como objetivo a criação de duas <i>stylesheet's</i> em formato XSLT,
+            em que cada uma seria usada para aplicar transformações a dois ficheiros XML independentes.
+            Estas transformações permitem gerar os ficheiros HTML correspondentes, tendo em conta os 
+            <i>templates</i> definidos para cada <i>tag</i> do ficheiro XML.
+        </p>
+        <p>
+            O primeiro ficheiro XML a ser transformado, corresponde ao <i>project record</i>, <b>pr.xml</b>,
+            que foi especificado em aula, necessário para documentar todos os trabalhos da disciplina.
+            A transformação com a <i>stylesheet</i> <b>pr.xsl</b> resultou nesta única página HTML.
+        </p>
+        <p>
+            De seguida, foi criada uma <i>stylesheet</i> que realizasse transformações ao ficheiro XML
+            sobre os arqueossítios, <b>arq.xml</b>. Como tal, as transformações definidas com a <i>stylesheet</i>
+            <b>arq.xsl</b>, permitiram gerar um conjunto de páginas HTML que originaram um <i>website</i>,
+            contendo toda a informação guardada no ficheiro XML.            
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="pr.xml">Project Record XML</deliverable>
+        <deliverable path="pr.xsl">Project Record XSLT</deliverable>
+        <deliverable path="pr.html">Project Record Page</deliverable>
+        <deliverable path="arq.xsl">Arqueossítios XLST</deliverable>
+        <deliverable path="website/index.html">Website Arqueossítios</deliverable>
+    </deliverables>
+</pr>
