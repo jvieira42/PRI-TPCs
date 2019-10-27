@@ -1,0 +1,15 @@
+{
+  "name": "tpc4",
+  "version": "1.0.0",
+  "description": "Servidor Arquivo Sonoro",
+  "main": "arq-musica.js",
+  "scripts": {
+    "start": "node arq-musica"
+  },
+  "author": "João Vieira",
+  "license": "ISC",
+  "dependencies": {
+    "jsonfile": "^5.0.0",
+    "pug": "^2.0.4"
+  }
+}
