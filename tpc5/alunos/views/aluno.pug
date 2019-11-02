@@ -1,0 +1,53 @@
+extends layout
+block content
+  
+    .w3-card-4
+      header.w3-container.w3-cyan
+        h2 Portal do Aluno
+
+      div
+        .w3-cell-row  
+          <div class="w3-container w3-padding w3-cell" style="width:40%">
+              h3.w3-center
+                <b>Informações</b>
+              hr
+              .w3-large
+                p <b>Número:</b> 
+                  =al.id
+                p <b>Nome:</b> 
+                  =al.nome
+                p <b>Curso:</b> 
+                  =al.curso 
+                hr
+                .w3-card-4
+                  header.w3-container.w3-cyan.w3-margin-bottom
+                      h3 Adicionar Nota
+                  .w3-container
+                      form.w3-container(action='/alunos/'+ al.id + '/notas' method='POST')
+                        label
+                          b Indicador
+                        input.w3-input.w3-margin-bottom.w3-border.w3-light-grey(type='text' name='id')
+                        label
+                          b Nota
+                        input.w3-input.w3-border.w3-light-grey(type='text' name='valor')
+                        input.w3-margin-top.w3-margin-bottom.w3-btn.w3-blue-grey(type='submit' value='Enviar')
+          </div>
+          <div class="w3-container w3-padding w3-cell" style="width:60%">
+              h3.w3-center
+                <b>Notas</b>
+              hr
+              table.w3-table-all
+                tr
+                    th.w3-large.w3-center Indicador
+                    th.w3-large.w3-center Pauta
+                    th.w3-large.w3-center Remover
+                each n in al.notas
+                  tr
+                    td.w3-center=n.id
+                    td.w3-center=n.valor
+                    td.w3-center
+                      button.w3-button.w3-circle.w3-blue-grey(onclick="apagaNota('" + al.id + "','" + n.id + "')") Remover
+
+          </div>
+    footer.w3-card-4.w3-cyan
+      a.w3-large(class='w3-button' href='/alunos/') <b>Voltar</b>
