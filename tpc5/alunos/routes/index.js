@@ -88,7 +88,6 @@ router.delete('/alunos/:idAluno/notas/:idNota', function(req,res){
       var index = aluno.notas.findIndex(n => n.id == idN)
       if(index > -1){
         aluno.notas.splice(index,1)
-        alunos.splice()
         jsonfile.writeFile(myBD,alunos,erro => {
           if(erro) console.log(erro)
           else console.log('Nota removida com sucesso')
