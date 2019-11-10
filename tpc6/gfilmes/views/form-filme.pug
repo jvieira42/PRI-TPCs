@@ -1,0 +1,23 @@
+extends layout
+block content
+  .w3-card-4
+    header.w3-container.w3-blue-grey
+      h1 Inserção de um filme
+  .w3-card-4.w3-margin-top
+    form.w3-container(action="/filmes" method="post")
+        label Título:
+        input.w3-input(type="text" name="title")
+        label Ano:
+        input.w3-input(type="text" name="year")
+        label Gêneros: (max: 3)
+        input.w3-input(type="text" name="genres")
+        input.w3-input(type="text" name="genres")
+        input.w3-input(type="text" name="genres")
+        label Atores: (max: 5)
+        input.w3-input(type="text" name="cast")
+        input.w3-input(type="text" name="cast")
+        input.w3-input(type="text" name="cast")
+        input.w3-input(type="text" name="cast")
+        input.w3-input(type="text" name="cast")
+        input.w3-input.w3-hover-blue-grey.w3-margin-top(type="submit" value="Enviar")
+  a.w3-blue-grey.w3-card-4.w3-large(class='w3-button' href='/../..') <b>Voltar</b>

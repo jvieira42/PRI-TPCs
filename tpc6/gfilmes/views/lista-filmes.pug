@@ -1,0 +1,23 @@
+extends layout
+block content
+    .w3-container
+          
+        header.w3-card-4.w3-blue-grey
+            h1.w3-center Lista de filmes
+        a.w3-blue-grey.w3-card-4.w3-large.w3-margin-bottom(class='w3-button' href='/') <b>Voltar</b>
+            
+        table.w3-table-all
+            tr
+                th.w3-center Identificador
+                th.w3-center Título
+                th.w3-center Ano
+                th.w3-center Operações
+            each filme in lista
+                tr
+                    td.w3-center= filme._id
+                    td.w3-center= filme.title
+                    td.w3-center= filme.year
+                    td.w3-center
+                        a(href="/filmes/"+filme._id)
+                            button.w3-margin-right.w3-button.w3-circle.w3-blue-grey Info
+                        button.w3-margin-left.w3-button.w3-circle.w3-blue-grey(onclick="apagaFilme('" + filme._id + "')") Remover
