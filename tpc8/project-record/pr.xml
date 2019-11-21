@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI1920_TPC8</keyname>
+        <title>Servidor NodeJS - Ficheiros</title>
+        <subtitle>Relatório do TPC8</subtitle>
+        <bdate>18 de Novembro 2019</bdate>
+        <edate>25 de Novembro 2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www.di.uminho.pt/~jcr</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>a76516</identifier>
+            <name>João António Cidade Vieira</name>
+            <email>a76516@alunos.uminho.pt</email>
+            <photo path="photo.jpg"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            Para este trabalho de casa final, foi proposta a criação de um servidor em <b>NodeJS</b>, que disponibilizasse
+            uma <b>API</b> que permitisse a leitura e <i>upload</i> de ficheiros para a base de dados em <b>MongoDB</b>.
+        </p>
+        <p>
+            Assim sendo, apenas foi necessário criar uma rota ficheiros, que iria receber pedidos
+            do tipo <b>GET</b> e <b>POST</b>, tanto para listar os ficheiros da BD como para inserir um ou mais ficheiros.
+        </p>
+        <p>
+            Por fim, foi utilizado <b>JQuery</b> para criar um formulário dinâmico para os ficheiros, assim como também
+            foi criada uma função que apresenta um <i>modal</i>, cada vez que se clica num dos <i>items</i> da lista de ficheiros.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="pr.xml">Project Record XML</deliverable>
+        <deliverable path="pr.xsl">Project Record XSLT</deliverable>
+        <deliverable path="../ficheiros/">Servidor de Ficheiros</deliverable>
+    </deliverables>
+</pr>
