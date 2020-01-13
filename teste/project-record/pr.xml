@@ -35,6 +35,7 @@
         </p>
         <p>
             No ficheiro "teste.txt" estão as respostas às questões do exercício 2.
+            Quanto ao servidor de interface, mais uma vez é só entrar na diretoria "interface" e correr o comando "npm start".
         </p>
     </abstract>
     <deliverables>
