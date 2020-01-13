@@ -23,7 +23,7 @@
     </workteam>
     <abstract>
         <p>
-            Link do GitHub onde guardei os ficheiros do teste: http://www.di.uminho.pt/~jcr .
+            Link do GitHub onde guardei os ficheiros do teste: "https://github.com/jvieira42/PRI-TPCs/tree/master/teste" .
         </p>
         <p>
            Primeiramente corrigi o ficheiro JSON de erros, e posteriormente usei um servidor mongo para armazenar este ficheiro como base de dados.
