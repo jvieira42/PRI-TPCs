@@ -1,0 +1,27 @@
+EX2:
+
+- Quantos Tipologias estão catalogadas?
+76
+
+- Quantos Entidades pertencem à Tipologia tip_FSS?
+5
+
+- Em que processos a tipologia tip_FA participa como Comunicador?
+"Produção e intercâmbio de informação estratégica para segurança interna e defesa",
+"Reposição da ordem e gestão de incidentes de segurança",
+"Realização de exercícios e simulacros",
+"Atendimento telefónico de emergência",
+"Atuação em estado de emergência",
+"Atuação em estado de sítio",
+"Concessão de pensões de preço de sangue",
+"Concessão de pensões por serviços excecionais e relevantes prestados ao país",
+"Concessão de pensões de ex-prisioneiro de guerra",
+"Concessão de pensões por condecorações",
+"Seleção e seriação para ingresso no ensino ou formação",
+"Coordenação e execução de ações de ajuda humanitária e de emergência",
+"Ação de segurança a eventos de alto risco",
+"Ação de proteção e socorro"
+
+- A que tipologias pertence a entidade ent_SEF?
+Administração Pública e Forças e Serviços de Segurança
+

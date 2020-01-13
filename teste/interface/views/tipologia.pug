@@ -1,0 +1,56 @@
+extends layout
+block content
+  .w3-card-4
+    header.w3-container.w3-blue-grey
+      h1 
+        b  #{tip.designacao}
+  .w3-card-4.w3-margin-top
+    .w3-large.w3-padding-small
+        p <b>Sigla:</b> 
+          =tip.sigla
+        p <b>Estado:</b> 
+          =tip.estado
+  
+  .w3-card-4
+    h2.w3-center Lista de Entidades 
+    table.w3-table-all
+        tr
+            th.w3-center Sigla
+            th.w3-center Designação
+            th.w3-center Internacional
+        each e in ent
+            tr
+                td.w3-center= e.sigla
+                td.w3-center= e.internacional
+                td.w3-center
+                  a(href="/entidades/"+e.id)= e.designacao
+  .w3-card-4
+    h2.w3-center Processos em que é dono
+    table.w3-table-all
+        tr
+            th.w3-center código
+            th.w3-center título
+            th.w3-center id
+        each d in dono
+            tr
+                td.w3-center= d.tipoPar
+                td.w3-center= d.codigo
+                td.w3-center= d.id
+
+  .w3-card-4
+    h2.w3-center Processos em que é participante
+    table.w3-table-all
+        tr
+            th.w3-center tipoPar
+            th.w3-center código
+            th.w3-center título
+            th.w3-center id
+        each p in part
+            tr
+                td.w3-center= p.tipoPar
+                td.w3-center= p.codigo
+                td.w3-center= p.titulo
+                td.w3-center= p.id
+
+  footer.w3-card-4.w3-blue-grey
+      a.w3-large(class='w3-button' href='/') <b>Voltar</b>

@@ -1,0 +1,20 @@
+extends layout
+block content
+  .w3-card-4
+    header.w3-container.w3-blue-grey
+      h1 
+        b  #{ent.designacao}
+  .w3-card-4.w3-margin-top
+    .w3-large.w3-padding-small
+        p <b>Sigla:</b> 
+          =ent.sigla
+        p <b>Estado:</b> 
+          =ent.estado
+        p <b>SIOE:</b> 
+          =ent.sioe
+        p <b>Internacional:</b> 
+          =ent.internacional
+  
+  footer.w3-card-4.w3-blue-grey
+      a.w3-large(class='w3-button' href='../') <b>Voltar</b>
+  
